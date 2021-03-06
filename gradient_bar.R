@@ -20,7 +20,7 @@ for (i in 1:color_gradient){
         width = w, space =  c((space+(1-w)/2)/w, rep((space+1-w)/w,length(x)-1)),
         axisnames = TRUE)
     par(new = TRUE)
-    #===== to make grid under bars we need re-plot the first layer
+    #===== to make grid under bars we need to re-plot the first layer
     if (i == 1) {
         grid(nx=NA, ny=NULL,col = "lightgray", lty = "solid")
         par(new = TRUE)
