@@ -12,7 +12,7 @@ space = 0.2
 width = 1
 #===== bars are filled layer-by-layer with decreasing darckness and decreasing bar width
 for (i in 1:color_gradient){
-    colori = colfunc(color_gradient*2)[i] # next color 
+    colori = colfunc(color_gradient*2)[i] # next color ; here we increase the color array twice to keep everything darker
     w = width*(1-(i-1)*(1.0/color_gradient)) # next bar width
     
     barplot(x, col = colori, names.arg=names,
