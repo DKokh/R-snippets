@@ -7,10 +7,10 @@ names <- c("a","b","c","d","e","f")
 colfunc <- colorRampPalette(c( 'olivedrab',"white")) #"#336600",
 color_gradient = 50 # number of gradient layers
 
-#===== starting width and the sapece between bars
+#===== width and the space between bars
 space = 0.2
 width = 1
-#===== bars are filled layer-by-layer with decreasing darckness
+#===== bars are filled layer-by-layer with decreasing darckness and decreasing bar width
 for (i in 1:color_gradient){
     colori = colfunc(color_gradient*2)[i] # next color 
     w = width*(1-(i-1)*(1.0/color_gradient)) # next bar width
